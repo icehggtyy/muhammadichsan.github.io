@@ -1,0 +1,27 @@
+.jumbotron {
+  padding-top: 6rem;
+}
+.warna1 {
+  background-color: #472d2d;
+}
+.warna2 {
+  background-color: #553939;
+}
+.warna3 {
+  background-color: #704f4f;
+}
+.warna4 {
+  background-color: #a77979;
+}
+section {
+  padding-top: 5rem;
+}
+.no-decoration {
+  text-decoration: none;
+}
+.warna5 {
+  background-color: #f4dfb6;
+}
+.footer1 {
+  color: #ffff;
+}

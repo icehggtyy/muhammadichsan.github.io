@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>My Portofolio</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -206,6 +206,45 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Function to toggle "active" class, change color, and scroll smoothly
+        function handleNavClick(event) {
+          event.preventDefault(); // Prevent the default link behavior
+
+          const clickedLink = event.target;
+          const targetId = clickedLink.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          // Remove "active" class and reset color from all links
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            link.style.color = ""; // Reset color to default or remove this line if not needed
+          });
+
+          // Add "active" class to the clicked link
+          clickedLink.classList.add("active");
+
+          // Set the color for the active link
+          clickedLink.style.color = "brown"; // Change this to your desired color
+
+          // Scroll to the target section smoothly
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        }
+
+        // Add click event listener to each navigation link
+        navLinks.forEach((link) => {
+          link.addEventListener("click", handleNavClick);
+        });
+      });
     </script>
   </body>
 </html>

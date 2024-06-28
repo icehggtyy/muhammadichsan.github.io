@@ -25,6 +25,24 @@ section {
 .warna5 {
   background-color: #f4dfb6;
 }
-.footer1 {
-  color: #ffff;
+
+.footer .github a:hover{
+  color: white;
+  transition: 0.3s;
 }
+.footer .instagram a:hover {
+  color: #E1306C;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer .whatsapp a:hover {
+  color: #25D366;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer a {
+  color: white;
+}
+

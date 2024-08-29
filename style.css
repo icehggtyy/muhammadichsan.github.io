@@ -26,18 +26,18 @@ section {
   background-color: #f4dfb6;
 }
 
-.footer .github a:hover{
+.footer .github a:hover {
   color: white;
   transition: 0.3s;
 }
 .footer .instagram a:hover {
-  color: #E1306C;
+  color: #e1306c;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .footer .whatsapp a:hover {
-  color: #25D366;
+  color: #25d366;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -45,4 +45,3 @@ section {
 .footer a {
   color: white;
 }
-
